@@ -1,0 +1,46 @@
+🐇 🏙 🍇
+
+    🖍🆕 data       🐍
+    🖍🆕 locations  📇
+    🖍🆕 timestamps 📇
+    🖍🆕 chunks     📇
+    🖍🆕 nsectors   🔢
+
+    🆕 path 🔡 🍇
+        🍺📏🕊📑path❗️ ➡️ file_length
+        file_length ➗ 4096 ➡️ 🖍nsectors
+        🆕🐍🆕 🍺📇🐇📄path❗️❗️ ➡️ 🖍data
+        📇data 4096❗️️ ➡️ 🖍locations
+        📇data 4096❗️ ➡️ 🖍timestamps
+        📇data file_length ➖ 8192❗️ ➡️🖍chunks
+    🍉
+
+    ❗️ 🏠 pos 🔢 ➡️ 🍬🇳🔸🅱🔸️🇹 🍇
+        pos ✖ 4 ➡️ loc_offset
+        🆕🐍🆕 🔪locations loc_offset 4❗️❗️ ➡️ location_data
+
+        🏠location_data❗️ ✖ 4096 ➡️ offset
+        🎈location_data❗️ ✖ 4096 ➡️ section_length
+
+        ↪️ offset 🙌 0 🤝 section_length 🙌 0 🍇
+            ↩️🤷
+        🍉
+
+        🆕🐍🆕🔪chunks offset ➖ 8192 section_length❗️❗️ ➡️ chunk_queue
+        🔢chunk_queue❗️ ➡️ chunk_length
+        🎈chunk_queue❗️
+
+        📇chunk_queue chunk_length ➖ 1❗️ ➡️ chunk_data_compressed
+        👷🕊☘️chunk_data_compressed❗️ ➡️ chunk_data
+
+        🍺📻🐇📄🔤wat2.nbt🔤 chunk_data❗️
+
+        🆕🇳🔸🅱🔸️🇹🆕 chunk_data❗️ ➡️ nbt
+        ↩️nbt
+    🍉
+
+    ❓ 🏠 ➡️ 🔢 🍇
+        ↩️ nsectors ➖ 2
+    🍉
+
+🍉
