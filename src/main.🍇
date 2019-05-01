@@ -5,7 +5,40 @@
 📜🔤region.🍇🔤
 
 🏁🍇
+
+    🎞🐇💻❗️ ➡️ arguments
+    0        ➡ 🖍🆕chunk  ️
+
+    ↪️ ❎🐔arguments❗️ 🙌 3❗️ 🍇
+        😀🍪🔤Usage: 🔤 🐽arguments 0❗️ 🔤 <region file> <chunk>🔤🍪❗️
+        🚪🐇💻 0❗️ 
+    🍉
+
+    🐽arguments 1❗️ ➡️ path
+    ↪️ ❎📜🕊📑path❗️❗️ 🍇
+        😀🔤Region file either does not exist or is not readable!🔤❗️
+        🚪🐇💻 0❗️ 
+    🍉
+
+    ↪️ 🔢🐽arguments 2❗️ 10❗️ ➡️ c 🍇
+        c ➡️ 🖍chunk
+    🍉
+    🙅🍇
+        😀🔤Input is not an integer!🔤❗️
+        🚪🐇💻 0❗️
+    🍉
+
     🆕🏙🆕 🔤r.0.0.mca🔤❗️ ➡️ region
 
-    😀🔡😩🍺🏠region 290❗️❓❓❗️
+    ↪️ chunk ▶️ 🏠region❓ 🍇
+        😀🍪🔤Selected chunk is outside of boundaries (max = 🔤 🔡🏠region❓10❗️ 🔤)🔤🍪❗️
+        🚪🐇💻 0❗️
+    🍉
+
+    🔤Chunk is empty🔤 ➡️ 🖍🆕chunk_str
+    ↪️ 🏠region chunk❗️ ➡️ c 🍇
+        🔡😩c❓❓ ➡️ 🖍chunk_str
+    🍉
+
+    😀chunk_str❗
 🍉
