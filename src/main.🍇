@@ -1,0 +1,32 @@
+📦 files 🏠️️️
+📦 zlib  🏠️️️
+
+📜🔤nbt.🍇🔤
+
+🏁🍇
+
+    🔤r.0.0.mca🔤 ➡️ region_file_name
+
+    🍺📏🕊📑 region_file_name❗️ ➡️ file_size
+    🍺🆕📄📜 region_file_name❗️ ➡️ region_handle
+
+    🍺📓region_handle 4096❗️ ➡️ locations
+    🍺📓region_handle 4096❗️ ➡️ timestamps
+    🍺📓region_handle file_size ➖ 8192❗️ ➡️ chunks
+
+    🚪region_handle❗️
+
+    🔪chunks 0 4❗️ ➡️ chunk_length_bytes
+    🔢🐽chunk_length_bytes 0❗️❗️👈 24 💢 
+    🔢🐽chunk_length_bytes 1❗❗️👈 16 💢
+    🔢🐽chunk_length_bytes 2❗❗️👈 8  💢
+    🔢🐽chunk_length_bytes 3❗❗️      ➡️ chunk_length
+
+    🔪chunks 5 chunk_length❗️ ➡️ chunk_data_compressed
+
+    👷🕊☘️chunk_data_compressed❗️ ➡️ chunk_data
+
+    🍺📇🐇📄 🔤bigtest.nbt🔤❗️ ➡️ hw_data
+    🆕🇳🔸🅱🔸️🇹🆕 hw_data❗️ ➡️ hw_nbt
+
+🍉
